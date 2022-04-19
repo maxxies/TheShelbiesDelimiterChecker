@@ -75,7 +75,7 @@ function checkBracket(e) {
                 case '>':
                     //sets an error if closing delimiter is entered
                     if (stack.length == 0) {
-                        var newmessage = "Error starting with a closing delimiter '" + character + "' at '"+counter+"' .";
+                        var newmessage = "Error starting with a closing delimiter '" + character + "' at '"+(counter + 1)+"' .";
                         condition = 1;
                         updateMessage(newmessage);
                     }
@@ -88,7 +88,7 @@ function checkBracket(e) {
                                     stack.shift();
                                 }
                                 else {
-                                    var errorOne = "Mismatched delimiter for '" + character  + "' at '"+counter+"' .";
+                                    var errorOne = "Mismatched delimiter for '" + character  + "' at '"+(counter+1)+"' .";
                                     condition = 1;
                                     updateMessage(errorOne);
                                 }
@@ -98,7 +98,7 @@ function checkBracket(e) {
                                     stack.shift();
                                 }
                                 else {
-                                    var errorTwo = "Mismatched delimiter for '" + character  + "' at '"+counter+"' .";
+                                    var errorTwo = "Mismatched delimiter for '" + character  + "' at '"+(counter+1)+"' .";
                                     condition = 1;
                                     updateMessage(errorTwo);
                                 }
@@ -108,7 +108,7 @@ function checkBracket(e) {
                                     stack.shift();
                                 }
                                 else {
-                                    var errorThree = "Mismatched delimiter for '" + character  + "' at '"+counter+"' .";
+                                    var errorThree = "Mismatched delimiter for '" + character  + "' at '"+(counter+1)+"' .";
                                     condition = 1;
                                     updateMessage(errorThree);
                                 }
@@ -118,7 +118,7 @@ function checkBracket(e) {
                                     stack.shift();
                                 }
                                 else {
-                                    var errorFour = "Mismatched delimiter for '" + character  + "' at '"+counter+"' .";
+                                    var errorFour = "Mismatched delimiter for '" + character  + "' at '"+(counter+1)+"' .";
                                     condition = 1;
                                     updateMessage(errorFour);
                                 }
